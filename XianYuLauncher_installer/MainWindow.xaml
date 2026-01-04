@@ -1,0 +1,18 @@
+<windowex:WindowEx
+    x:Class="XianYuLauncher_installer.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XianYuLauncher_installer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:windowex="using:WinUIEx"
+    Width="895"
+    Height="608"
+    MinWidth="895"
+    MinHeight="608"
+    PersistenceId="MainWindow"
+    mc:Ignorable="d">
+    <Window.SystemBackdrop>
+        <MicaBackdrop/>
+    </Window.SystemBackdrop>
+</windowex:WindowEx>

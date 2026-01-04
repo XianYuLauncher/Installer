@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "XianYuLauncher_installer (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "XianYuLauncher_installer (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
