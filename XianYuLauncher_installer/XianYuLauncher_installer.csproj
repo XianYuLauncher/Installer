@@ -19,32 +19,6 @@
     <!-- 优化配置，减小应用体积 -->
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>false</SelfContained>
-    
-    <!-- 发布模式下的优化 -->
-    <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>link</TrimMode>
-    <TrimEnabled>true</TrimEnabled>
-    <TrimUnusedDependencies>true</TrimUnusedDependencies>
-    <TrimXml>true</TrimXml>
-    
-    <!-- 压缩优化 -->
-    <CompressSingleFile>true</CompressSingleFile>
-    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
-    
-    <!-- 编译优化 -->
-    <Optimize>true</Optimize>
-    <DebugType>None</DebugType>
-    <DebugSymbols>false</DebugSymbols>
-    <PublishReadyToRun>true</PublishReadyToRun>
-    <PublishReadyToRunShowWarnings>false</PublishReadyToRunShowWarnings>
-    <UseRidGraph>true</UseRidGraph>
-    
-    <!-- 裁剪本地化资源 -->
-    <SatelliteResourceLanguages>zh-CN,en</SatelliteResourceLanguages>
-    
-    <!-- 禁用不必要的功能 -->
-    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>

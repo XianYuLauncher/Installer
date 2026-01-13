@@ -133,6 +133,34 @@ public partial class MainViewModel : ObservableRecipient
         App.MainWindow.Close();
     }
 
+    public async Task ShowWelcomeDialogAsync()
+    {
+        var dialog = new Microsoft.UI.Xaml.Controls.ContentDialog
+        {
+            Title = "你知道吗",
+            Content = "XianYuLauncher 现已上架微软商店！\n\n" +
+                     "微软商店版本安装更简单,无需手动配置证书和开发者模式,推荐普通用户使用\n\n" +
+                     "如果您熟悉侧载应用的安装流程,也可以继续使用本安装程序",
+            PrimaryButtonText = "前往微软商店",
+            SecondaryButtonText = "继续安装",
+            DefaultButton = Microsoft.UI.Xaml.Controls.ContentDialogButton.Primary,
+            XamlRoot = App.MainWindow.Content.XamlRoot
+        };
+
+        var result = await dialog.ShowAsync();
+
+        if (result == Microsoft.UI.Xaml.Controls.ContentDialogResult.Primary)
+        {
+            // 点击"前往微软商店"，跳转到微软商店
+            var uri = new Uri("ms-windows-store://pdp/?ProductId=9pcnpgl7j6ks");
+            await Windows.System.Launcher.LaunchUriAsync(uri);
+            
+            // 关闭应用
+            App.MainWindow.Close();
+        }
+        // 点击"继续安装"，只关闭对话框，继续使用应用
+    }
+
     private async Task LoadLatestVersionInfoAsync()
     {
         try

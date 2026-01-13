@@ -52,7 +52,7 @@
 
           <com:Extension Category="windows.comServer">
               <com:ComServer>
-                  <com:ExeServer Executable="XianYuLauncher_installer.exe" Arguments="----AppNotificationActivated:" DisplayName="Toast activator">
+                  <com:ExeServer Executable="$targetnametoken$.exe" Arguments="----AppNotificationActivated:" DisplayName="Toast activator">
                       <com:Class Id="67f4efd9-0ad0-4950-b628-308d68b37351" DisplayName="Toast activator"/>
                   </com:ExeServer>
               </com:ComServer>

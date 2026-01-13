@@ -35,6 +35,15 @@ public sealed partial class MainPage : Page, INotifyPropertyChanged
         // 设置GitHub图标源
         var githubIconPath = System.IO.Path.Combine(AppContext.BaseDirectory, "Assets/icons/github.png");
         GitHubIconImage.Source = new Microsoft.UI.Xaml.Media.Imaging.BitmapImage(new Uri(githubIconPath));
+        
+        // 页面加载完成后显示欢迎弹窗
+        this.Loaded += MainPage_Loaded;
+    }
+
+    private async void MainPage_Loaded(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+        // 显示欢迎弹窗
+        await ViewModel.ShowWelcomeDialogAsync();
     }
 
     private void ViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
