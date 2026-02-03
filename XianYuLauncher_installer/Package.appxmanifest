@@ -12,14 +12,14 @@
 
   <Identity
     Name="c07ae165-353e-4a50-8f39-8b77dcba9999"
-    Publisher="CN=pc"
-    Version="1.3.0.0" />
+    Publisher="CN=Spirit Studio"
+    Version="1.4.0.0" />
     
   <mp:PhoneIdentity PhoneProductId="c07ae165-353e-4a50-8f39-8b77dcba9999" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
     
   <Properties>
     <DisplayName>XianYuLauncher_installer</DisplayName>
-    <PublisherDisplayName>pc</PublisherDisplayName>
+    <PublisherDisplayName>Spirit Studio</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
